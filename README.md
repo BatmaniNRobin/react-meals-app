@@ -130,7 +130,7 @@ const Meals = () => {
 }
 
 export default Meals
-Custom Hook
+#### Custom Hook
 context.jsx
 
 export const useGlobalContext = () => {
@@ -144,7 +144,7 @@ const Meals = () => {
 }
 
 export default Meals
-Data Fetching
+#### Data Fetching
 where and how
 context.jsx
 
@@ -185,7 +185,8 @@ const AppProvider = ({ children }) => {
     }
     fetchData()
   },[])
-Meals DB
+
+#### Meals DB
 utilize search engine "meals db", follow the link
 Meals DB
 get familiar with docs
@@ -197,6 +198,7 @@ setup two variables in context.jsx
 (allMealsUrl, randomMealUrl) and assign the corresponding values
 Get Meals By Name (with axios)
 Axios
+
 
 install axios
 import in context.jsx
@@ -238,7 +240,7 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     fetchMeals(allMealsUrl)
   }, [])
-State Variable (meals) and render
+#### State Variable (meals) and render
 import useState hook
 setup state variable (meals)
 set it equal to the meals from api (setMeals)
@@ -390,7 +392,7 @@ const Meals = () => {
     </section>
   }
 }
-No items
+#### No items
 in fetchMeals check if data.meals is truthy
 returns true
 basically has some value
