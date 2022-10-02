@@ -15,7 +15,7 @@ export default function App() {
       {/*<Search/>*/}
       <Search />
       {/*<Favorite/>*/}
-      <Favorite />
+      {favorites.length > 0 && <Favorite /> }
       {/*<Meals/>*/}
       <Meals />
       {/* <Modal/> */}
