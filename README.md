@@ -451,7 +451,7 @@ const Meals = () => {
     </section>
   }
 }
-Search Component - Structure
+#### Search Component - Structure
 in Search.jsx
 import useState and useGlobalContext
 setup return
@@ -482,7 +482,7 @@ const Search = () => {
 
 
 export default Search
-Search Component - CSS
+#### Search Component - CSS
 HandleChange and Handle Submit
 create "text" state variable
 create two functions handleChange and handleSubmit
@@ -521,7 +521,7 @@ const Search = () => {
 
 
 export default Search
-Search Term
+#### Search Term
 in context.jsx create new state variable "searchTerm" with default value ''
 combine allMealsUrl with searchTerm and pass in the fetchMeals
 add searchTerm to useEffect's dependency array
@@ -602,7 +602,7 @@ const Search = () => {
 
 
 export default Search
-Fetch Random Meal
+#### Fetch Random Meal
 context.jsx
 
 const AppProvider = ({ children }) => {
@@ -654,7 +654,7 @@ const Search = () => {
 
 
 export default Search
-Fix Bugs
+#### Fix Bugs
 /components/Search.jsx
 
 import { useState } from 'react'
@@ -718,7 +718,7 @@ const AppProvider = ({ children }) => {
     </AppContext.Provider>
   )
 }
-Modal - Setup
+#### Modal - Setup
 /components/Modal.jsx
 
 import { useGlobalContext } from '../context'
@@ -775,7 +775,7 @@ export default function App() {
     </main>
   )
 }
-Modal CSS - Setup
+#### Modal CSS - Setup
 App.css
 
 .modal-overlay {
@@ -798,7 +798,7 @@ App.css
   background:var(--white);
   border-radius:var(--borderRadius);
 }
-Display Meal in the Modal
+#### Display Meal in the Modal
 context.jsx
 
 const AppProvider = ({ children }) => {
@@ -858,7 +858,7 @@ const Meals = () => {
 }
 
 export default Meals
-Display Selcted Meal and Close Modal
+#### Display Selcted Meal and Close Modal
 context.jsx
 
 const AppProvider = ({ children }) => {
@@ -898,7 +898,7 @@ const Modal = () => {
 }
 
 export default Modal
-Modal CSS - Complete
+#### Modal CSS - Complete
 App.css
 
 .modal-img{
@@ -929,7 +929,7 @@ App.css
   background:var(--red-dark);
   color:var(--white);
 }
-Favorites - Setup
+#### Favorites - Setup
 context.jsx
 
 const AppProvider = ({ children }) => {

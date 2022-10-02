@@ -2,10 +2,10 @@ import React, {useContext} from "react";
 import App from "../App";
 // import { AppContext } from "../context";
 import { useGlobalContext } from "../context";
-// import {BsHandThumbsUp} from 'react-icons/bs'
+import {BsHandThumbsUp} from 'react-icons/bs'
 
 const Meals = () => {
-  const {meals, loading} = useGlobalContext();
+  const {meals, loading, selectMeal} = useGlobalContext();
   
   if(loading) {
     return (
@@ -26,10 +26,10 @@ const Meals = () => {
       const { idMeal, strMeal: title, strMealThumb: image } = singleMeal;
       return (
         <article key={idMeal} className="single-meal" >
-          <img src={image} style={{width:'200px'}} className="img" />
+          <img src={image} className="img" onClick={() => {selectMeal(idMeal)}}/>
           <footer>
             <h5>{title}</h5>
-            <button className='like-btn'>click me</button>
+            <button className='like-btn'><BsHandThumbsUp/></button>
           </footer>
         </article>
       )
